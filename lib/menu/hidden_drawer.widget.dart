@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
 import 'package:myacademy_trainer/main.dart';
+import 'package:myacademy_trainer/pages/calendar.page.dart';
 import 'package:myacademy_trainer/pages/home.page.dart';
+import 'package:myacademy_trainer/pages/profile.page.dart';
+import 'package:myacademy_trainer/pages/students.page.dart';
 
 class HiddenDrawer extends StatefulWidget {
   const HiddenDrawer({super.key});
@@ -41,7 +44,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           selectedStyle: mySelectedTextStyle,
           colorLineSelected: Color(0xff7058BA),
         ),
-        const HomePage(),
+        const ProfilePage(),
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(
@@ -50,7 +53,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           selectedStyle: mySelectedTextStyle,
           colorLineSelected: Color(0xff7058BA),
         ),
-        const HomePage(),
+        const StudentsListPage(),
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(
@@ -59,7 +62,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           selectedStyle: mySelectedTextStyle,
           colorLineSelected: Color(0xff7058BA),
         ),
-        const HomePage(),
+        const CalendarPage(),
       ),
     ];
   }
