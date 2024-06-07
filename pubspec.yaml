@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   hidden_drawer_menu: ^3.0.1
+  weekly_calendar: ^0.1.2
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2

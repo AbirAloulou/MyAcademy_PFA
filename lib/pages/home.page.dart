@@ -21,15 +21,31 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         // backgroundColor: Theme.of(context).primaryColor.withOpacity(0.25),
-        // actions: [
-        //   IconButton(
-        //     icon: const Icon(Icons.logout),
-        //     color: Color(0xff7058BA),
-        //     onPressed: () {
-        //       Navigator.pushNamed(context, '/login');
-        //     },
-        //   ),
-        // ],
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 16.0),
+            child: Material(
+              elevation:
+                  4.0, // Adjust the elevation to change the shadow's intensity
+              shape: const CircleBorder(),
+              color: Colors.transparent, // Use transparent color for Material
+              shadowColor: Colors.black,
+              child: Ink(
+                decoration: const ShapeDecoration(
+                  color: Color(0xffEDEBFF),
+                  shape: CircleBorder(),
+                ),
+                child: IconButton(
+                  icon: const Icon(Icons.logout),
+                  color: Color(0xff7058BA),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/login');
+                  },
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -72,13 +88,13 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-                  IconButton(
-                    icon: const Icon(Icons.logout),
-                    color: Color(0xff7058BA),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/login');
-                    },
-                  ),
+                  // IconButton(
+                  //   icon: const Icon(Icons.logout),
+                  //   color: Color(0xff7058BA),
+                  //   onPressed: () {
+                  //     Navigator.pushNamed(context, '/login');
+                  //   },
+                  // ),
                 ],
               ),
             ),

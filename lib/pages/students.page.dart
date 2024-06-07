@@ -11,18 +11,18 @@ class _StudentsListPageState extends State<StudentsListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Expanded(
-          child: const Text(
-            'This is a list of all of the students \nper training course session.',
-            style: TextStyle(
-              color: Colors.grey,
-              fontSize: 15,
-              // fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-      ),
+      // appBar: AppBar(
+      //   title: Expanded(
+      //     child: const Text(
+      //       'A list of all of your students.',
+      //       style: TextStyle(
+      //         color: Colors.grey,
+      //         fontSize: 15,
+      //         // fontWeight: FontWeight.bold,
+      //       ),
+      //     ),
+      //   ),
+      // ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(10),
